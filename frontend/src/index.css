@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* ArcGIS requires the map container to have explicit dimensions */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom utilities */
+@layer utilities {
+  .map-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
